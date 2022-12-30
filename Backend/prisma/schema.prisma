@@ -1,0 +1,142 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model Player {
+    id   String @id @default(uuid())
+    nickname  String @unique
+    firstName String
+    lastName  String
+    avatar    String
+    email     String @unique
+    wins      Int    @default(0)
+    loses     Int    @default(0)
+
+    tfa     Boolean @default(false)
+    tfaSecret String?
+
+    // explicit self relation many to many
+    senders   Friendship[] @relation("SendRequest")
+    receivers Friendship[] @relation("ReceiveRequest")
+
+    chat_rooms Permission[] @relation("PermissionInRoom")
+
+    all_messages Message[] @relation("SendMsg")
+    // explicit relation many to many
+    game_winned game_history [] @relation("game_winned")
+    game_losed game_history [] @relation("game_losed")
+    achivement achievements[] @relation("achivement")
+}
+
+model achievements {
+    id   String @id @default(uuid())
+    name String
+    description String
+    avatar String
+
+
+    playerId String
+    player Player @relation("achivement", fields: [playerId], references: [id])
+}
+
+model game_history {
+  id_game_history Int @id @default(autoincrement())
+  winner_id String
+  winner_name String
+  winner_avatar String
+  winner Player @relation("game_winned", fields: [winner_id], references: [id])
+  winner_score Int
+  looser_id String
+  looser_name String
+  looser_avatar String
+
+
+  looser Player @relation("game_losed", fields: [looser_id], references: [id])
+  losser_score Int
+  created_at DateTime @default(now())
+}
+
+model ChatRoom {
+    id   String @id @default(uuid())
+    createdAt    DateTime     @default(now())
+    is_dm        Boolean      @default(true) // type ==> enum [DM, ROOM]
+    name         String?
+    is_public    Boolean      @default(false)
+    is_private Boolean      @default(false)
+    is_protected Boolean      @default(false)
+    password     String?
+    all_members  Permission[] @relation("PermissionOfmember")
+    all_messages Message[]    @relation("ThisRoom") // one to many
+}
+
+model Permission {
+    // statusMember     Status @default(MEMBER)
+    statusMember String // owner admin member
+    is_banned    Boolean  @default(false)
+    is_muted     Boolean  @default(false)
+    muted_since DateTime @default(now()) 
+    duration     Int?
+
+    player    Player   @relation("PermissionInRoom", fields: [playerId], references: [id])
+    playerId  String
+    chat_room ChatRoom @relation("PermissionOfmember", fields: [roomId], references: [id])
+    roomId    String
+    @@unique([playerId, roomId])
+    @@id([playerId, roomId])
+
+}
+
+model Message {
+    id   String @id @default(uuid())
+    sender   Player @relation("SendMsg", fields: [senderId], references: [id])
+    senderId String
+
+    room   ChatRoom @relation("ThisRoom", fields: [roomId], references: [id])
+    roomId String
+
+    msg       String
+    createdAt DateTime @default(now())
+}
+
+// There is no enum type in SQLite, only the following:
+// enum Status {
+//     OWNER
+//     ADMIN
+//     MEMBER
+//     BANNED
+// }
+
+// https://www.prisma.io/docs/guides/database/troubleshooting-orm/help-articles/working-with-many-to-many-relations
+// https://www.prisma.io/docs/concepts/components/prisma-schema/relations/self-relations#relational-databases
+
+model Friendship {
+    //id Int @id @default(autoincrement())
+    status     String  // Friend, Block, Pending
+    date       DateTime @default(now())  // we don;t need you
+    sender     Player   @relation("SendRequest", fields: [senderId], references: [id])
+    senderId   String
+    receiver   Player   @relation("ReceiveRequest", fields: [receiverId], references: [id])
+    receiverId String
+
+    @@id([senderId, receiverId])
+    @@unique([senderId, receiverId])
+}
+
+//message 2 route set message / get message ==> dm
+//dossier membershp && messages
+//messgae / rooms /  membership
+
+enum achievementsName {
+  Bono
+  CleanSheet
+  Ziyech
+  hamdallah
+}

@@ -1,0 +1,26 @@
+.SocialList{
+    height: 100px;
+background-color: #2a4fa6;
+width: 100%;
+      color:white;
+    gap:20px;
+justify-content: space-between;
+}
+.SocialList li {
+    display: inline-block;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.965);
+    margin-bottom: 1rem;
+    color: white;
+    
+    gap:20px;
+}
+.ButtonSocial-Unfriend{
+    color:grey;
+}
+.SocialListList span {
+    flex-direction: row;
+}
+.ButtonSocial-block {
+    color:red;
+}

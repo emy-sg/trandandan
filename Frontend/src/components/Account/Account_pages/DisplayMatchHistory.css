@@ -1,0 +1,62 @@
+.winner-div> button > span {
+color:#1cb380;;
+}
+.loser-div > button > span {
+    color:#a40221
+}
+.neutral-div > button > span {
+    color: #1e90fe;
+
+}
+.Match-History {
+    border-top: 3px solid #1e90fe;
+    border-bottom: 3px solid #1e90fe;
+    border-left: 3px solid #1e90fe;
+    border-right: 3px solid #1e90fe;
+
+    background-image: url("../../../../public/images/achiev_back.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: rotate 6s infinite alternate linear;
+
+  
+}
+
+.History-Table{
+    width: 100%;
+    overflow-y: scroll;
+    
+}
+.History-Table  td {
+    color: #1e90fe;
+    font-size: large;
+
+/* border-top: 2px solid #1e90fe; */
+
+/* border-right: 2px solid grey; */
+
+}
+
+
+.History-Table  th {
+
+    color: #1e90fe;
+/* border-top: 2px solid #1e90fe; */
+
+
+}
+.avatar1{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 5px solid #1d4999;
+    filter: drop-shadow(0 0 8px #1d4999);
+    float :left;
+    overflow: hidden;
+  }
+  .lost-score{
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+  }

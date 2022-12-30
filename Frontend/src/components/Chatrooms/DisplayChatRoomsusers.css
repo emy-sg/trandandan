@@ -1,0 +1,25 @@
+.ChatRoom-table td {
+    color:  red;
+}
+.ChatRoom-table td  span {
+    color: blue;
+}
+.ChatRoom-table td p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 5em;
+    color: blue;
+    white-space: nowrap;
+}
+
+
+.ChatRoom-table td > .ButtonSocial-Unfriend span{
+color: blue;
+}
+
+.ButtonSocial-block span {
+    color:red;
+}
+.ChatRoom-table td > .ButtonSocial-block span{
+    color:  red;
+}

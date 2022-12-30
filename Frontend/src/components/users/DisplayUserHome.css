@@ -1,0 +1,55 @@
+.Contact-help  button span {
+    color: red;
+}
+
+.AddDiv-div> button > span {
+    color:#1cb380;;
+}
+
+.button-displayuser{
+    color: white;
+    right: 0;
+    align-items: center;
+}
+
+.display-user-container{
+    width: 100%;
+    align-items: center;
+    background-color: grey;
+}
+
+
+.display-user-container  li {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+}
+
+.display-user-container .img{
+    background-color: aquamarine;
+    position: absolute;
+    float: left;
+}
+
+.display-user-container ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.avataruser{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px solid #1d4999;
+    filter: drop-shadow(0 0 8px #1d4999);
+    float :left;
+    overflow: hidden;
+    position: relative;
+    
+  }
+
+  .blockednickname{
+    color: white;
+  }

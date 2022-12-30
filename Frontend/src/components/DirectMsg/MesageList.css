@@ -1,0 +1,66 @@
+.MsgHistory{
+    /* color: pink; */
+    /* width: 100%; */
+
+    /* display: inline-block; */
+}
+.YourMessages{
+     /* float :right; */
+    /* width:  */
+    display: inline-block;
+    border:   solid blueviolet;
+    box-sizing: border-box;
+    
+    border-radius: 10px;
+    /* max-width: 100%; */
+    /* justify-content: left; */
+    align-items: center;
+    font-size: medium;
+    /* ju: center; */
+    /* margin-right:  -10px; */
+    /* text-justify: center; */
+    /* background-opacity: 0.5; */
+    width: 100%;
+    color: darkblue;
+    /* max-width: 100%; */
+    /* background-color: blueviolet; */
+    
+}
+
+.OthersHistory{
+    background: rgba(189, 195, 199, .5);
+}
+.OthersMessages{
+
+    /* float :right; */
+    /* width:  */
+    display: inline-block;
+    border:   solid blueviolet;
+    box-sizing: border-box;
+    
+    border-radius: 10px;
+    /* max-width: 100%; */
+    /* justify-content: left; */
+    align-items: center;
+    /* ju: center; */
+    /* margin-right:  -10px; */
+    /* text-justify: center; */
+    /* background-opacity: 0.5; */
+    width: 100%;
+    color: darkblue;
+    /* max-width: 100%; */
+    /* background-color: blueviolet; */
+   
+}
+.OthersMessages span  {
+    color: blue;
+    font-size: medium;
+    float :right;
+}
+
+.time-right{
+    bottom: 0;
+    color: blue;
+    font-size: medium;
+    float :right;
+}

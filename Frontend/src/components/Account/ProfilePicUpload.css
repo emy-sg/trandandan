@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  .wrapper {
+    height: 100%;
+  }
+  
+  /* @keyframes rotate {
+    100% {
+      background-position: 15% 50%;
+    }
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url("../../../public/images/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Euclid Circular A";
+    color: grey;
+    animation: rotate 6s infinite alternate linear;
+  }
+   */
+
+  .ProfilePicDef{
+    float: left;
+    border: 100px;
+  }
+
+  .login-form {
+    width: 100%;
+    margin: 0;
+    display: grid;
+  }
+
+  .login-form > input,
+  .login-form > button {
+    background: white;
+  }
+ 
+  
+  .login-form > button {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 0;
+    border-radius: 0.5rem;
+    font-family: "Euclid Circular A";
+    color: #f7f7f7;
+    background: #216ce7;
+    cursor: pointer;
+  }
+  
+ 
+ 
+  
+  .login-form > input,
+  .login-form > button {
+    width: 100%;
+    height: 36px;
+    border: 2px solid #ebebeb;
+    font-family: inherit;
+    font-size: 16px;
+  }
+  
+  
+  .login-form > a {
+    color: #216ce7;
+    font-size: 1rem;
+    text-align: left;
+    text-decoration: none;
+    margin-bottom: 6px;
+  }
+
+  

@@ -1,0 +1,10 @@
+.App {
+    min-height: 100vh;
+   margin-top: 62px;
+    padding: -100px;
+   
+}   
+html, body {
+    overflow: hidden;
+    background-color: white;
+  }

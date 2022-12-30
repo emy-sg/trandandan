@@ -1,0 +1,113 @@
+.chat-room-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chat-room-list li {
+    height: 100px;
+    background: grey;
+    flex: 1 1 calc(50% - 4px);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ChatRooms {
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  .wrapper {
+    height: 100%;
+  }
+  
+  .Roomlist-card{
+    overflow-y: scroll;
+    max-height: 70vh;
+    justify-content: center;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  /* @keyframes rotate {
+    100% {
+      background-position: 15% 50%;
+    }
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url("../../../public/images/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Euclid Circular A";
+    color: #000;
+    animation: rotate 6s infinite alternate linear;
+  } */
+  
+  @media (width >= 500px) {
+    body {
+      padding: 0;
+    }
+  }
+  
+  .ChatRooms-card {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0 20px;
+    padding: 70px 30px 30px;
+    border-radius: 1.25rem;
+    background: #004e92;
+    text-align: center;
+  }
+ 
+  
+  .ChatRooms-card > h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    color:white;
+  }
+  
+  .ChatRooms-card > h3 {
+    color: rgba(0, 0, 0, 0.38);
+    margin: 0 0 30px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .CreateChatRoom-button{
+    cursor: pointer;
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    border-radius: 0.5rem;
+    background: #216ce7;
+    color: #f9f9f9;
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.375s;
+  }
+  .ChatRoomMessageBox{
+    color: grey;
+  }
+
+.ChatRoomMessageBox .li{
+  color: red;
+}
+  

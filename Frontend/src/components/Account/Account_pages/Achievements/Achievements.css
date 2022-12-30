@@ -1,0 +1,34 @@
+.Achievements-card {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    overflow-y: scroll;
+    height: 60vh;
+    width: 100%;
+    padding: 20px 20px 20px;
+    
+  }
+  .locked-div > button > span {
+    color:red;
+}
+
+.unlocked-div > button > span {
+  color: #1052b9;
+  
+}
+.unlocked-div > span {
+  justify-content: center;
+flex-direction: row;
+}
+.locked-div  > span {
+  justify-content: center;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);  
+}
+
+.locked-div  > span:hover{
+  
+}

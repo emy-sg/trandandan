@@ -1,0 +1,26 @@
+.AchievementsList{
+border-bottom: 3px solid #2a4fa6;
+border-left: 3px solid #2a4fa6;
+border-right: 3px solid #2a4fa6;
+border-top: 3px solid #2a4fa6;
+/* 
+background-image: url("../../../../../public/images/Achievements_background.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+animation: rotate 6s infinite alternate linear;
+transition: transform .2s; */
+background-color: lightgrey;
+color: darkslateblue;
+}
+.AchievementsList:hover{
+    transform: scale(1.2);
+}
+.AchievementsList li {
+    display: inline-block;
+}
+.Achievements-container{
+    /* background-color: white; */
+    /* width: 100%;
+    /* background-color: black; */
+  
+}

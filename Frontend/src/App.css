@@ -1,0 +1,27 @@
+.QR-card {
+    /* width: 50em; */
+    background: #004e92;
+
+    /* align-items: center; */
+    margin: auto;
+    padding: 30px 30px 30px;
+    gap: 30px;
+}
+
+.QR-card input {
+    background-color: beige;
+    width: 150px;
+    margin-top: 10x;
+    padding: 10px 10px 10px;
+
+
+
+}
+.QR-card button {
+    color: black;
+    width: 150px;
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px 10px 10px;
+
+}

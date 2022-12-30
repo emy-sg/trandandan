@@ -1,0 +1,38 @@
+
+
+.ChatRoomButtons-container{
+    position:absolute;top: 0;left:9vh;
+    color: white;
+    background-color: #1d4999;
+    justify-content: center;
+    flex-direction: column;
+    display:flex ;
+    
+}
+
+.ChatRoomButtons-container > .ChatRoomButtons{
+
+    cursor: pointer;
+    height: 20px;
+    padding: 0 16px;
+    background: #216ce7;
+    color: #f9f9f9;
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.375s;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.ChatRoomButtons-container input{
+    width: 30vh;
+    /* height: 60px; */
+    /* padding: 30px 10px 30px; */
+    /* width: 20vh;
+    height:10vh;
+    overflow-y: scroll; */
+}

@@ -1,0 +1,57 @@
+#gameArea * {
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  .gameScreenDiv > button {
+    margin-bottom: 14px;
+  }
+  
+  /* button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+  }
+  
+  button:hover {
+    background-color: buttonface;
+    color: buttontext;
+  }
+   */
+  .numberOfPlayers,
+  .toolsPlayer,
+  .difficulty,
+  .mode {
+    color: lightgrey;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 6px;
+    background-color: black;
+    border: 3px lightgray solid;
+    border-radius: 10px;
+    padding: 4px 10px;
+    width: 200px;
+    outline: 0;
+  }
+  
+  #gameArea * {
+    font-family: "Courier New", Courier, monospace;
+  }

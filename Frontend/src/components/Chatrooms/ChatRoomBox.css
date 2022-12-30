@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  .wrapper {
+    height: 100%;
+  }
+  
+  @keyframes rotate {
+    100% {
+      background-position: 15% 50%;
+    }
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-image: url("../../../public/images/Polygon-10s-603px.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Euclid Circular A";
+    color: grey;
+    animation: rotate 6s infinite alternate linear;
+  }
+  
+  @media (width >= 500px) {
+    body {
+      padding: 0;
+    }
+  }
+  .Users-container{
+    position: relative;
+    float :left;
+    /* width: 100%; */
+    background-color: #7272FF;
+    top: 0;
+    display: inline-block;
+    /* max-width: 45%; */
+    overflow-x: scroll;
+    /* width: 30%; */
+    z-index: 10;
+    width: 40vh;
+
+   /* height:10vh; */
+
+    /* max-height: 40vh; */
+    max-height: 50vh;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  .ProfilePicDef{
+    float: left;
+    border: 100px;
+  }
+  .ChatRoomBox-card {
+    /* position: relative; */
+    /* width: 20em; */
+
+    z-index: 3;
+    /* background-color: darkblue; */
+    background-color: grey;
+    /* min-width: 100%; */
+    /* width: 100%; */
+    /* max-width: %; */
+    max-width: 80em;
+    /* min-width: none; */
+    /* max-width: 70%; */
+    margin: 0 0px;
+    padding: 20px 0px 0px ;
+    border-radius: 1.25rem;
+    /* height: 40vh; */
+    
+    min-height: 40vh;
+    display: inline-block;
+    border-top: 3px solid #1e90fe;
+    border-bottom: 3px solid #1e90fe;
+    border-left: 3px solid #1e90fe;
+    border-right: 3px solid #1e90fe;
+    color : darkblue;
+
+    justify-content: center;
+    align-items: center;
+    
+
+    
+  }
+
+  .History-Box {
+    position: relative;
+    
+    background-image: url("../../../public/images/chatroombackground.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: rotate 2s infinite alternate linear;
+    width: 40vh;
+    /* background: white; */
+    /* width: 25em; */
+    /* color: */
+    /* max-width: 70%; */
+    
+    /* float:right; */
+    /* overflow: hidden; */
+    /* margin-right: ; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* float: right; */
+    /* right: 0; */
+    /* width: 100%; */
+    /* align-items: right; */
+    /* float: right; */
+    /* float: right; */
+    /* flex-direction: column; */
+    /* float: right; */
+    /* justify-content: right; */
+    /* width: 60vh; */
+    /* right: 0; */
+    /* margin-left: auto; */
+    /* text-align: right; */
+    /* padding-left: 100px; */
+    /* margin-left: 12em; */
+    /* align-items: left; */
+    /* color: blue; */
+    /* height: 300px; */
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .label{
+    float:left;
+  }
+  
+  @media (width >= 500px) {
+    .ChatRoomBox-card {
+      /* margin: 0;
+      width: 300px;
+    border-radius: 0.5rem;
+      bottom: 65px; */
+    }
+  }
+  
+  .ChatRoomBox-card > h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    color: blue;
+    background-color: grey;
+  }
+  
+  .ChatRoomBox-card > h3 {
+    color: grey;
+    margin: 0 0 30px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .ChatRoom-Input-form {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+  }
+
+  .ChatRoom-Input-form > input,
+  .ChatRoom-Input-form > button {
+    width: 100%;
+    height: 56px;
+    background: white;
+  }
+  .ChatRoom-Input-form > input{
+    float:left;
+  }
+  .ChatRoom-Input-form > input {
+    border: 2px solid #ebebeb;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 0 16px;
+    float: left;
+  }
+  
+  .ChatRoom-Input-form > button {
+    /* cursor: pointer;
+    width: 100%;
+    height: 35px; */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    border: 0;
+    padding: 0 16px;
+    border-radius: 0.5rem;
+    font-family: "Euclid Circular A";
+    color: #f7f7f7;
+    background: #216ce7;
+    cursor: pointer;
+    /* padding: 0 16px;
+    border-radius: 0.5rem;
+    background: #216ce7;
+    color: #f9f9f9;
+    border: 0; */
+    /* font-family: inherit;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.375s; */
+  }
+  
+  .ChatRoom-Input-form > a {
+    color: #216ce7;
+    font-size: 1rem;
+    text-align: left;
+    text-decoration: none;
+    margin-bottom: 6px;
+  }
+
+  /* .md-textbox {
+    position: relative;
+    font-family: "Euclid Circular A";
+  }
+  
+  .md-textbox :is(label, span) {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    pointer-events: none;
+    color: #888888;
+    transition: 0.3s;
+  }
+  
+  .md-textbox > label {
+    left: 10px;
+    translate: 0 -50%;
+    padding: 4px 8px;
+  }
+  
+  .md-textbox > span {
+    right: 16px;
+    font-size: 28px;
+  }
+  
+  .md-textbox > input {
+    height: 56px;
+    width: 100%;
+    padding-left: 16px;
+    border: 2px solid #888888;
+    border-radius: 8px;
+    outline: none;
+    background: white;
+    color: #f9f9f9;
+    font-family: inherit;
+    font-size: 16px;
+  }
+  
+  .md-textbox > :is(input:focus, .has-value) {
+    border-color: #8f44fd;
+  }
+  
+  .md-textbox > :is(input:focus, .has-value) ~ span {
+    color: #f9f9f9;
+  }
+  
+  .md-textbox > :is(input:focus, .has-value) ~ label {
+    background: #151515;
+    color: rgba(255, 255, 255, 0.75);
+    translate: 0 -46px;
+  } */
+  
+    .ChatRoomUsers-container{
+      position: relative;
+      top: 0;
+      width: 100%;
+    }
+  .User-InputBox {
+    position: relative;
+    top: 0;
+
+    font-family: "Euclid Circular A";
+  }
+  
+  .User-InputBox :is(label, span) {
+    top: 70%;
+    translate: 0 -50%;
+    pointer-events: none;
+    color: #888888;
+    transition: 0.3s;
+  }
+  
+  .User-InputBox > label {
+    left: 10px;
+    translate: 0 -50%;
+    padding: 4px 8px;
+  }
+  
+  .User-InputBox > span {
+    right: 16px;
+    font-size: 28px;
+  }
+  
+  .User-InputBox > input {
+    height: 56px;
+    width: 100%;
+
+  }
+  
+  .User-InputBox > :is(input:focus, .has-value) {
+    border-color: #216ce7;
+  }
+  
+  .User-InputBox > :is(input:focus, .has-value) ~ span {
+    color: #216ce7;
+  }
+  
+  .User-InputBox > :is(input:focus, .has-value) ~ label {
+    background: #216ce7;
+    color: rgba(255, 255, 255, 0.75);
+    translate: 0 -46px;
+  }
+
+
+    
+  .ChatRoom-InputBox {
+    position: relative;
+    font-family: "Euclid Circular A";
+  }
+  
+  .ChatRoom-InputBox :is(label, span) {
+    position: absolute;
+    top: 70%;
+    translate: 0 -50%;
+    pointer-events: none;
+    color: #888888;
+    transition: 0.3s;
+  }
+  
+  .ChatRoom-InputBox > label {
+    left: 10px;
+    translate: 0 -50%;
+    padding: 4px 8px;
+  }
+  
+  .ChatRoom-InputBox > span {
+    right: 16px;
+    font-size: 28px;
+  }
+  
+  .ChatRoom-InputBox > input {
+    height: 56px;
+    width: 100%;
+
+    padding: 30px 30px 30px;
+    border: 2px solid #888888;
+    border-radius: 8px;
+    outline: none;
+    background: white;
+    color: black;
+    font-family: inherit;
+    font-size: 16px;
+  }
+  
+  .ChatRoom-InputBox > :is(input:focus, .has-value) {
+    border-color: #216ce7;
+  }
+  
+  .ChatRoom-InputBox > :is(input:focus, .has-value) ~ span {
+    color: #216ce7;
+  }
+  
+  .ChatRoom-InputBox > :is(input:focus, .has-value) ~ label {
+    background: #216ce7;
+    color: rgba(255, 255, 255, 0.75);
+    translate: 0 -46px;
+  }
+
+
+  

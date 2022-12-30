@@ -1,0 +1,74 @@
+
+
+
+.Contact-HELP {
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid grey;
+  
+}
+  .Contact-HELP h1{
+    background-color: beige;
+  }
+  .Contact-table {
+    width: 100%;
+
+    
+
+  }
+  .Contact-HELP td:hover {background-color: coral;}
+
+  .Contact-HELP td {
+    color: white;
+    justify-content: space-between;
+  flex-direction: column;
+
+
+  }
+  .Contact-table td p {
+  
+    overflow: hidden;
+    width: 5em; 
+   
+
+  }
+.icon-div >  button > span {
+    color: #1cb380;
+  }
+
+  .inGame-div >  button > span {
+    color: orange;
+  }
+
+  .icon-off-div >  button > span {
+    color: #a40221;
+  }
+
+  .DmClass{
+    background: blueviolet;  
+    position: absolute;
+    padding-bottom: 0px; 
+    left: 0;
+    justify-content:center; 
+    align-items:flex-end ;
+    bottom: 0;
+  height: 300px;
+
+  }
+  
+
+  .Contact-HELP th{
+    padding-top: 2px;
+}
+
+.FriendAddIcon{
+
+
+}
+.Scrollable-DmWindow{
+    overflow-y: scroll;
+}
+.Contact-table td p {
+  overflow-x: scroll;
+  max-width: 20vh;
+}

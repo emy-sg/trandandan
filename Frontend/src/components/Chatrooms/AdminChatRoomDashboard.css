@@ -1,0 +1,30 @@
+.ChatRoomAdminDash-container {
+    position:absolute;
+    top: 0;
+   right: 0;
+    width: 30vh;
+    color: white;
+    background-color: #1d4999;
+    justify-content: center;
+    flex-direction: column;
+    display:flex ;
+}
+
+
+.ChatRoomAdminDash-container > .AdminDashButtons{
+
+    cursor: pointer;
+    height: 20px;
+    background: #216ce7;
+    color: #f9f9f9;
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.375s;
+}
+
+.without_ampm::-webkit-datetime-edit-ampm-field {
+   display: none;
+ }

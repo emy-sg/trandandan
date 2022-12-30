@@ -1,0 +1,56 @@
+.HomePage {
+}
+
+
+.center {
+    margin-left: auto ;
+    margin-right: auto;
+    border-bottom: 1px solid grey;
+    color: white;
+    margin: 0 auto;
+
+    
+  }
+
+ .center td:hover {background-color: coral;
+  transform: scale(1.2);
+}
+
+.center td {
+    margin-top: 100px;
+    background-color: #004e92;
+    color: white;
+    justify-content: center;
+transition: transform .2s;
+
+  }
+  
+.box {
+overflow-x: auto;
+}
+.center .h{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    color: white;
+    
+}
+
+.Friendbutton {
+  border-bottom: 1px solid grey;
+  height: 5vh;
+  position:fixed;bottom: 5.3em;;right:0
+}
+
+.container {
+  margin-top: auto;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  bottom: 0;
+
+}
+.container .btn-holder {
+  justify-content: flex-end;
+  display: flex;
+}

@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sidebar button i {
+  position: relative;
+  font-size: 28px;
+  transition: 0.2s;
+}
+
+.sidebar button:hover > span {
+  background: #f2f2f2;
+}
+
+.sidebar button:hover > span :is(i, img) {
+  scale: 1.05;
+}
+
+.sidebar button > span > span {
+  transition: 0.3s;
+}
+
+.sidebar button i > .em-notifs {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 2px;
+  right: -1px;
+  border: 1px solid #ffffff;
+  background: #ff2f40;
+  color: #f9f9f9;
+  font-size: 12px;
+  font-family: BlinkMacSystemFont;
+  font-style: normal;
+}
+/* NOTIF CSS ABOVE  */
+
+.sidebar {
+  position: absolute;
+  overflow: hidden;
+  top:0;
+  left: 0;
+  width: 72px;
+  height: 100%;
+  background-image: linear-gradient(to right, #1d4999 , #2c3e50);
+  transition: width 0.4s;
+  
+}
+body.open .sidebar {
+  width: 260px;
+  z-index: 10;
+  
+}
+@media (width < 700px) {
+  body.open .sidebar {
+    width: 180px;
+  }
+}
+
+
+
+.sidebar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding: 0 1.25rem 0 0;
+  background-image:  linear-gradient(to right, #1d4999 , #2c3e50);
+}
+
+.sidebar-burger {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  background: url(../../public/images/icon-burger.svg) no-repeat center center;
+}
+
+body.open .sidebar-burger {
+  background: url(../../public/images/icon-close.svg) no-repeat no-repeat center center;
+}
+
+.sidebar-logo {
+  height: 20px;
+}
+
+.sidebar-menu {
+  display: grid;
+}
+
+.avatarsidebar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #1d4999;
+  filter: drop-shadow(0 0 8px #1d4999);
+  float :left;
+  overflow: hidden;
+}
+.sidebar-menu > button {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  height: 60px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  line-height: 1;
+  padding: 0 25px;
+}
+
+.sidebar-header {
+  color: #1e90fe;
+  gap: 5px;
+}
+.sidebar-menu > button  > span{
+  color: white;
+}
+
+.sidebar-menu > button.has-border {
+  padding-bottom: 1rem;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.12);
+  margin-bottom: 1rem;
+}
+
+.sidebar-menu > button > img {
+  width: 24px;
+  height: 24px;
+}
+
+.sidebar-menu > button > span {
+  color: #1e90fe;
+
+}
